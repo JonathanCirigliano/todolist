@@ -1,0 +1,127 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #FF5151; 
+    /* font-family: 'Indie Flower', cursive; */
+    /* font-family: 'Mansalva', cursive; */
+}
+
+#logo {
+    font-family: 'Prompt', sans-serif;
+    margin: 10px auto;
+    font-size: 2.4em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFDFD;
+    border-bottom: solid #FFFDFD 1px;
+}
+
+
+.container {
+    margin: 0 40px;
+}
+
+#content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.list {
+    background-color: white;
+    width: 40%;
+    margin: 20px auto;
+    max-width: 500px; 
+    padding: 20px 20px;
+    box-sizing: border-box;
+    box-shadow: 4px 4px 0 rgba( 0, 0, 0, 0.3);
+    border-radius: 6px;
+}
+
+.list .titolo {
+    font-family: 'Mansalva', cursive;
+    margin: 0 0 10px 0;
+}
+
+.azioni {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.azioni .done{
+    text-transform: uppercase;
+    padding: 2px 4px;
+    color: black;
+    font-size: 0.8em;
+    background-color: #dfe6e9;
+    border-radius: 4px;
+    text-decoration: none;
+    display: inline-block;
+    opacity: 0.4;
+}
+
+.azioni .delete{
+    text-transform: uppercase;
+    padding: 2px 4px;
+    color: red;
+    font-size: 0.8em;
+    background-color: black;
+    border-radius: 4px;
+    text-decoration: none;
+    display: none;
+}
+
+.azioni .actionComplete {
+    text-decoration: line-through;
+}
+
+.azioni li:hover .delete {
+    display: inline-block;
+}
+
+.azioni li:hover .done {
+    opacity: 1;
+}
+
+.azioni li, .aggiungereAzioni input {
+    border: 0;
+    border-bottom: solid black 1px;
+    padding: 12px 0;
+    font-family: 'Indie Flower', cursive; 
+    letter-spacing: 0.2em;
+}  
+
+.aggiungereAzioni {
+    margin-top: 40px;
+}
+
+
+.actionInput {
+    width: 100%;
+}
+
+input:focus {
+    outline: none;
+}
+
+.submitButton {
+    background-color: #FF5151;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid #ddd;
+    width: 100%;
+    margin-top: 10px;
+    border-bottom: none!important;
+    box-shadow: 4px 4px 0 rgba( 0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    #content {
+        display: block;
+    }
+
+    .list {
+        width: 100%;
+    }
+}
